@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 50%;
-  height: 270px;
+  min-height: 270px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -52,4 +52,29 @@ body {
 
 .container button:active {
   transform: scale(0.9);
+}
+
+/* mobile */
+
+@media (max-width: 700px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+
+  .container button {
+    width: 100%;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 5px;
+  }
 }
